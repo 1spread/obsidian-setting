@@ -1,0 +1,133 @@
+/* Mermaid Business Blue Theme for Obsidian */
+/* ビジネス青系のカラーパレット */
+
+/* ==== 基本色定義 ==== */
+:root {
+  --mermaid-blue-1: #1e40af;  /* 濃い青 */
+  --mermaid-blue-2: #3182ce;  /* メイン青 */
+  --mermaid-blue-3: #63b3ed;  /* 明るい青 */
+  --mermaid-blue-4: #90cdf4;  /* 薄い青 */
+  --mermaid-blue-5: #bee3f8;  /* 最も薄い青 */
+  --mermaid-accent: #2b6cb0;  /* アクセント */
+  --mermaid-text: #1a365d;    /* テキスト色 */
+  --mermaid-bg: #ebf8ff;      /* 背景色 */
+}
+
+/* ==== 円グラフ (Pie Chart) ==== */
+.mermaid .pieTitleText {
+  fill: var(--mermaid-text) !important;
+  font-weight: 600 !important;
+}
+
+.mermaid .slice:nth-child(1) path { fill: #1e40af !important; }
+.mermaid .slice:nth-child(2) path { fill: #3182ce !important; }
+.mermaid .slice:nth-child(3) path { fill: #63b3ed !important; }
+.mermaid .slice:nth-child(4) path { fill: #90cdf4 !important; }
+.mermaid .slice:nth-child(5) path { fill: #bee3f8 !important; }
+.mermaid .slice:nth-child(6) path { fill: #2b6cb0 !important; }
+.mermaid .slice:nth-child(7) path { fill: #4299e1 !important; }
+.mermaid .slice:nth-child(8) path { fill: #76c7f4 !important; }
+
+/* 円グラフのラベル */
+.mermaid .pieLabel {
+  fill: var(--mermaid-text) !important;
+  font-size: 12px !important;
+}
+
+/* ==== 棒グラフ (XY Chart) ==== */
+.mermaid .xychart-plot-rect {
+  fill: var(--mermaid-blue-2) !important;
+}
+
+.mermaid .xychart-bar:nth-child(1) { fill: #1e40af !important; }
+.mermaid .xychart-bar:nth-child(2) { fill: #3182ce !important; }
+.mermaid .xychart-bar:nth-child(3) { fill: #63b3ed !important; }
+.mermaid .xychart-bar:nth-child(4) { fill: #90cdf4 !important; }
+.mermaid .xychart-bar:nth-child(5) { fill: #bee3f8 !important; }
+.mermaid .xychart-bar:nth-child(6) { fill: #2b6cb0 !important; }
+
+/* 軸とタイトル */
+.mermaid .xychart-title {
+  fill: var(--mermaid-text) !important;
+  font-weight: 600 !important;
+}
+
+.mermaid .xychart-axis-label {
+  fill: var(--mermaid-text) !important;
+}
+
+.mermaid .xychart-tick-text {
+  fill: #4a5568 !important;
+}
+
+/* ==== フローチャート ==== */
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node circle,
+.mermaid .node ellipse {
+  fill: var(--mermaid-bg) !important;
+  stroke: var(--mermaid-blue-2) !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid .node .label {
+  color: var(--mermaid-text) !important;
+  fill: var(--mermaid-text) !important;
+}
+
+/* エッジ（矢印） */
+.mermaid .edgePath .path {
+  stroke: var(--mermaid-blue-2) !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid .edgeLabel {
+  background-color: white !important;
+  color: var(--mermaid-text) !important;
+}
+
+/* ==== シーケンス図 ==== */
+.mermaid .actor {
+  fill: var(--mermaid-bg) !important;
+  stroke: var(--mermaid-blue-2) !important;
+}
+
+.mermaid .messageText {
+  fill: var(--mermaid-text) !important;
+}
+
+.mermaid .messageLine0,
+.mermaid .messageLine1 {
+  stroke: var(--mermaid-blue-2) !important;
+}
+
+/* ==== ガントチャート ==== */
+.mermaid .task {
+  fill: var(--mermaid-blue-3) !important;
+  stroke: var(--mermaid-blue-1) !important;
+}
+
+.mermaid .taskText {
+  fill: var(--mermaid-text) !important;
+}
+
+.mermaid .sectionTitle {
+  fill: var(--mermaid-text) !important;
+  font-weight: 600 !important;
+}
+
+/* ==== 全体設定 ==== */
+.mermaid {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+.mermaid text {
+  fill: var(--mermaid-text) !important;
+}
+
+/* タイトル共通 */
+.mermaid .titleText {
+  fill: var(--mermaid-text) !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}

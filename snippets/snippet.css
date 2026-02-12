@@ -1,0 +1,91 @@
+/* Editorモードにおけるウィキリンクの下線を解除 */
+.cm-hmd-internal-link a.cm-underline {
+	text-decoration: none !important;
+}
+
+/* ウィキリンク（内部リンク）の下線を完全に解除 */
+a.internal-link,
+a.internal-link:hover {
+	text-decoration: none !important;
+}
+
+/* 外部リンクは下線を表示（必要に応じて） */
+a.external-link,
+a.external-link:hover {
+	text-decoration: underline !important;
+}
+
+/*
+ * The simplest possible CSS to present the default statuses provided by the
+ * tasks plugin:
+ *   [-]  Cancelled
+ *   [/]  In Progress
+ *
+ * Should display the same in reading mode, editing mode and task display mode
+ *
+ * Thanks to deathau's checkbox snippets as a starting point:
+ * https://github.com/deathau/obsidian-snippets/blob/main/checkbox.css
+ *
+ * Tested with Obsidian v1.5.3 and Tasks 6.0.0
+ */
+
+/* Horizontal dash icon in checkbox for Cancelled tasks */
+.task-list-item-checkbox[data-task="-"]:checked::after,
+.plugin-tasks-list-item[data-task="-"] > .task-list-item-checkbox:checked::after {
+	content: '';
+	background-color: white;
+	margin: 0;
+	mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='6.5' width='13' height='1'/%3E%3C/svg%3E");
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='6.5' width='13' height='1'/%3E%3C/svg%3E");
+}
+
+/* Strikethrough for Cancelled tasks */
+.HyperMD-task-line[data-task="-"],
+.plugin-tasks-list-item[data-task="-"] {
+	text-decoration: var(--checklist-done-decoration);
+}
+
+/* In Progress tasks: arrow icon with theme accent color */
+input[data-task="/"]:checked,
+li[data-task="/"] > input:checked,
+li[data-task="/"] > p > input:checked {
+	background-color: transparent !important;
+}
+
+input[data-task="/"]:checked::after,
+li[data-task="/"] > input:checked::after,
+li[data-task="/"] > p > input:checked::after {
+	content: "" !important;
+	width: 100% !important;
+	height: 100% !important;
+	background-color: var(--checkbox-color, var(--interactive-accent)) !important;
+	mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 7h8M7 4l3 3-3 3' stroke='black' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 7h8M7 4l3 3-3 3' stroke='black' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+	mask-size: 70% !important;
+	-webkit-mask-size: 70% !important;
+	mask-repeat: no-repeat !important;
+	-webkit-mask-repeat: no-repeat !important;
+	mask-position: center !important;
+	-webkit-mask-position: center !important;
+}
+
+/* Horizontal rule (---) styling: thicker line, same color as Heading 1 */
+:is(.markdown-preview-view, .markdown-source-view.mod-cm6 .markdown-rendered) hr {
+	border: none !important;
+	border-bottom: 4px solid var(--h1-color, var(--text-accent)) !important;
+	background: transparent !important;
+	height: 0 !important;
+	margin: 2em 0 !important;
+}
+
+/* Backward compatibility (if any old notes used this class) */
+:is(.markdown-preview-view, .markdown-source-view.mod-cm6 .markdown-rendered) hr.bold-hr {
+	border-bottom-width: 4px;
+}
+
+/* テーブル関連のCSSは `table.css` スニペットに分離 */
+
+
+
+
+

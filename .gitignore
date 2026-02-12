@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Obsidian - sensitive plugin configs (contain API keys)
+plugins/obsidian-excalidraw-plugin/data.json
+plugins/translate/data.json
+plugins/share-note/data.json
+
+# Obsidian - personal workspace state
+workspace.json
+
+# Obsidian - local indexes
+copilot-index-*.json

@@ -1,0 +1,10 @@
+.HyperMD-header-1,
+.HyperMD-header-2 {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+div.HyperMD-header.HyperMD-header-1.cm-line,
+div.HyperMD-header.HyperMD-header-2.cm-line {
+    padding-bottom: 0.5em;
+}
+

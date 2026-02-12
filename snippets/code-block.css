@@ -1,0 +1,16 @@
+/* Code Block Sizing
+ * コードブロックをコンパクトに表示する
+ * フォントサイズ: 0.75em
+ */
+
+/* Reading View & Live Preview */
+:is(.markdown-preview-view, .markdown-source-view.mod-cm6 .markdown-rendered) pre code {
+  font-size: 0.75em;
+  line-height: 1.4;
+}
+
+/* Source Mode (編集モード) */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  font-size: 0.75em;
+  line-height: 1.4;
+}

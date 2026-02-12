@@ -1,0 +1,38 @@
+{
+	"en_ja": [
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">galling</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">（ねじの）かじり</span>"
+		],
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">thread binding</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">（ねじの）焼き付き</span>"
+		],
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">“stop tool” function</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">「ストップ・ツール」機能</span>"
+		],
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">Change for Good</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">『Change for Good』</span>"
+		]
+	],
+	"ja_en": [
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">（ねじの）かじり</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">galling</span>"
+		],
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">（ねじの）焼き付き</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">thread binding</span>"
+		],
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">「ストップ・ツール」機能</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">“stop tool” function</span>"
+		],
+		[
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">『Change for Good』</span>",
+			"<span data-sheets-root=\"1\" style=\"color: rgb(0, 0, 0); white-space-collapse: collapse; font-size: 10pt; font-family: Arial;\">Change for Good</span>"
+		]
+	]
+}
