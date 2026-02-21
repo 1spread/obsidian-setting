@@ -1,28 +1,31 @@
-# obsidian-daisuke-setting
+# obsidian-setting
 
-IGNITE チーム共通の Obsidian 設定リポジトリです。プラグイン・テーマ・ホットキーなどの `.obsidian` 設定を統一管理します。
+1spread チーム共通の Obsidian 設定リポジトリです。プラグイン・テーマ・ホットキーなどの `.obsidian` 設定を統一管理します。
 
 ## Quick Setup（ワンコマンド）
 
-既存の Vault に設定を適用する場合：
+ターミナルで以下を実行するだけでセットアップ完了：
 
 ```bash
-rm -rf /path/to/vault/.obsidian && git clone https://github.com/igni7e/obsidian-daisuke-setting.git /path/to/vault/.obsidian
+bash <(curl -fsSL https://raw.githubusercontent.com/1spread/obsidian-setting/main/setup.sh)
 ```
 
-> `/path/to/vault` を実際の Vault パスに置き換えてください。
+Vault のパスを聞かれるので入力してください。
 
-### 新規 Vault の場合
+### Vault パスを引数で渡す場合
 
-1. Obsidian で新しい Vault を作成する
-2. Obsidian を閉じる
-3. 上記のワンコマンドを実行する
-4. Obsidian を再度開く
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/1spread/obsidian-setting/main/setup.sh) ~/Documents/MyVault
+```
 
-### 注意事項
+### スクリプトの動作
 
-- 実行後は **Obsidian を再起動** してください（設定の反映に必要）
-- 一部プラグインは初回起動時に **API キーの設定が必要** です（下記「除外ファイル」参照）
+1. Vault パスを確認（引数 or インタラクティブ入力）
+2. 既存の `.obsidian` を自動バックアップ（`.obsidian.bak.YYYYMMDD_HHMMSS`）
+3. このリポジトリを `.obsidian` としてクローン
+4. 完了メッセージを表示
+
+> 実行後は **Obsidian を再起動** してください（設定の反映に必要）
 
 ## 設定の更新
 
@@ -31,8 +34,6 @@ rm -rf /path/to/vault/.obsidian && git clone https://github.com/igni7e/obsidian-
 ```bash
 cd /path/to/vault/.obsidian && git pull
 ```
-
-更新後も Obsidian の再起動が必要です。
 
 ## Excluded Files
 
@@ -45,3 +46,9 @@ cd /path/to/vault/.obsidian && git pull
 - `copilot-index-*.json` — Local search index
 
 これらのプラグインを使用する場合は、各プラグインの設定画面から API キーを手動で入力してください。
+
+## Changelog
+
+### 2026-02-21 - ワンコマンドセットアップ対応
+- `setup.sh` を追加（バックアップ機能付きインタラクティブセットアップ）
+- README をリポジトリ移転に合わせて更新（igni7e → 1spread）
